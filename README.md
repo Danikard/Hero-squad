@@ -1,5 +1,8 @@
 # Hero-squad
 this project will help you to assign new heros and put them into squads
+## AUTHOR
+
+Karambizi Amandine Gloria
 
 ## TECHNOLOGY USED
  Java
