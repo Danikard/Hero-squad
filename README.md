@@ -2,7 +2,7 @@
 this project will help you to assign new heros and put them into squads
 ## AUTHOR
 
-Karambizi Amandine Gloria
+KARAMBIZI Danius Jonathan
 
 ## TECHNOLOGY USED
  Java
@@ -17,4 +17,4 @@ For support contact us:
 ### LISENCE
 
 MIT
-Copyright © [2019] KARAMBIZI Danius Jonathan
+Copyright © [2020] KARAMBIZI Danius Jonathan
