@@ -1,7 +1,7 @@
 # Hero-squad
 this project will help you to assign new heros and put them into squads
 
-##TECHNOLOGY USED
+## TECHNOLOGY USED
  Java
     HTML
     Css
