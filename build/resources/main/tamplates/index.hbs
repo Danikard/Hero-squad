@@ -10,15 +10,15 @@
                     <button  class="btn btn-primary mb-2">{{ name }} <a href="/hero/{{id}}">read more...</a></button>
                 {{/each}}
             {{else}}
-                <p>no hero yet!!!</p>
+                <p>no hero for now!!!</p>
             {{/if}}
             {{#if squads}}
                 {{#each squads}}
-                    <button  class="btn btn-primary mb-2">{{ name }} <a href="/squad/{{id}}">read more...</a></button>
+                    <button  class="btn btn-primary mb-2">{{ name }} <a href="/squad/{{id}}">more...</a></button>
 
                 {{/each}}
             {{else}}
-                <p>no squad yet!!!!</p>
+                <p>no squad for now!!</p>
             {{/if}}
         </div>
     </div>

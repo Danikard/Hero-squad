@@ -1,0 +1,26 @@
+{{#partial}}
+    <div class="suit rbga-black align-items-center">
+        <div class="container">
+            <h1>SQUADS</h1>
+            <p>Welcome to HeroSquads app</P>
+            <p>where you create your favorite hero squads and assign them with super powers of your choice</p>
+            {{#if heroes }}
+                {{#each heroes}}
+                    <p><a href=""></a></p>
+                    <button  class="btn btn-primary mb-2">{{ name }} <a href="/hero/{{id}}">read more...</a></button>
+                {{/each}}
+            {{else}}
+                <p>no hero for now!!!</p>
+            {{/if}}
+            {{#if squads}}
+                {{#each squads}}
+                    <button  class="btn btn-primary mb-2">{{ name }} <a href="/squad/{{id}}">more...</a></button>
+
+                {{/each}}
+            {{else}}
+                <p>no squad for now!!</p>
+            {{/if}}
+        </div>
+    </div>
+{{/partial}}
+{{> layout.hbs}}
