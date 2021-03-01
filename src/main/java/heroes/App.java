@@ -10,17 +10,29 @@ import java.util.Map;
 import static spark.Spark.*;
 
 public class App {
-    public static void main(String[] args){
-        ProcessBuilder process= new ProcessBuilder();
-        int port;
-        if (process.environment().get("PORT") != null) {
-            port = Integer.parseInt(process.environment().get("PORT"));
+    public static void main(String[] args) {
+        ProcessBuilder processBuilder = new ProcessBuilder();
+        Integer port;
+        if (processBuilder.environment().get("PORT") != null) {
+            port = Integer.parseInt(processBuilder.environment().get("PORT"));
         } else {
             port = 4567;
         }
-//tell heroku to change port for us if not keep it 456  port //
         port(port);
-
+        staticFileLocation("/public");
+//        Map<String,Object> model = new HashMap<String,Object>();
+        String layout = "templates/layout.hbs";
+//    public static void main(String[] args){
+//        ProcessBuilder process= new ProcessBuilder();
+//        int port;
+//        if (process.environment().get("PORT") != null) {
+//            port = Integer.parseInt(process.environment().get("PORT"));
+//        } else {
+//            port = 4567;
+//        }
+////tell heroku to change port for us if not keep it 456  port //
+//        port(port);
+//
         staticFileLocation("/public");
         get("/", (request,response) -> {
             Map<String, Object> model = new HashMap<String,Object>();
